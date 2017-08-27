@@ -72,7 +72,7 @@ $objActSheet->getColumnDimension('C')->setWidth(12);
 $objActSheet->getColumnDimension('D')->setWidth(12);
 $objActSheet->getColumnDimension('E')->setWidth(12);
 
-$filename = '2015030423';
+$filename = date("YmhHis",time());
 ob_end_clean();//清除缓冲区,避免乱码
 header('Content-Type: application/vnd.ms-excel');
 header('Content-Disposition: attachment;filename="'.$filename.'.xls"');
